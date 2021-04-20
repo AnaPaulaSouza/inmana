@@ -1,5 +1,9 @@
 # Inmana - Inventory Management
 
+Prevenção de perdas com gerenciamento inteligente da data de validade
+
+
+# Setups
 To start your Phoenix server:
 
   * Install dependencies with `mix deps.get`
@@ -8,5 +12,5 @@ To start your Phoenix server:
 
 Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
   
-# inmana
-Prevenção de perdas com gerenciamento inteligente da data de validade
+
+
