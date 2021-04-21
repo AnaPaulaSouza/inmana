@@ -4,13 +4,12 @@ Prevenção de perdas com gerenciamento inteligente da data de validade
 
 
 # Setups
-To start your Phoenix server:
+Para iniciar o servidor Phoenix:
 
-  * Install dependencies with `mix deps.get`
-  * Create and migrate your database with `mix ecto.setup`
-  * Start Phoenix endpoint with `mix phx.server`
-
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+  * Instalar as dependências `mix deps.get`
+  * Criar o banco de dados `mix ecto.setup`
+  * Start Phoenix `mix phx.server`
+  * Endpoint `localhost:4000`
   
 
 
