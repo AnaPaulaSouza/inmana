@@ -2,7 +2,6 @@ defmodule InmanaWeb.RestaurantsController do
   use InmanaWeb, :controller
 
   alias Inmana.Restaurant
-
   alias InmanaWeb.FallbackController
 
   action_fallback FallbackController
