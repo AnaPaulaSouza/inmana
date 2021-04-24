@@ -10,7 +10,16 @@ defmodule Inmana.MixProject do
       compilers: [:phoenix, :gettext] ++ Mix.compilers(),
       start_permanent: Mix.env() == :prod,
       aliases: aliases(),
-      deps: deps()
+      deps: deps(),
+
+      #https://github.com/parroty/excoveralls (AJUDA VISUALIZAR AS COBERTURAS DE TESTES)
+      test_coverage: [tool: ExCoveralls], # `mix coveralls.html`
+      preferred_cli_env: [
+        coveralls: :test,
+        "coveralls.detail": :test,
+        "coveralls.post": :test,
+        "coveralls.html": :test
+      ]
     ]
   end
 
@@ -44,7 +53,8 @@ defmodule Inmana.MixProject do
       {:jason, "~> 1.0"},
       {:plug_cowboy, "~> 2.0"},
       {:credo, "~> 1.5", only: [:dev, :test], runtime: false},
-      {:bamboo, "~> 2.1.0"}
+      {:bamboo, "~> 2.1.0"},
+      {:excoveralls, "~> 0.10", only: :test} # `mix test --cover`
     ]
   end
 

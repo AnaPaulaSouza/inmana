@@ -3,9 +3,20 @@
     <CLASSES>
       <root url="file://$PROJECT_DIR$/_build/dev/lib/bamboo/ebin" />
       <root url="file://$PROJECT_DIR$/_build/dev/lib/bamboo/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/bamboo/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/bamboo/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/bamboo/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/bamboo/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/bamboo/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/test/lib/bamboo/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/bamboo/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/test/lib/bamboo/ebin" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
+      <root url="file://$PROJECT_DIR$/deps/bamboo/lib" />
+      <root url="file://$PROJECT_DIR$/deps/bamboo/lib" />
+      <root url="file://$PROJECT_DIR$/deps/bamboo/lib" />
       <root url="file://$PROJECT_DIR$/deps/bamboo/lib" />
       <root url="file://$PROJECT_DIR$/deps/bamboo/lib" />
     </SOURCES>
