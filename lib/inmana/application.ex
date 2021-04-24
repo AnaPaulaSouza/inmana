@@ -7,26 +7,17 @@ defmodule Inmana.Application do
 
   def start(_type, _args) do
     children = [
-      # Start the Ecto repository
       Inmana.Repo,
-      # Start the Telemetry supervisor
       InmanaWeb.Telemetry,
-      # Start the PubSub system
       {Phoenix.PubSub, name: Inmana.PubSub},
-      # Start the Endpoint (http/https)
-      InmanaWeb.Endpoint
-      # Start a worker by calling: Inmana.Worker.start_link(arg)
-      # {Inmana.Worker, arg}
+      InmanaWeb.Endpoint,
+      Inmana.Supplies.Scheduler
     ]
 
-    # See https://hexdocs.pm/elixir/Supervisor.html
-    # for other strategies and supported options
     opts = [strategy: :one_for_one, name: Inmana.Supervisor]
     Supervisor.start_link(children, opts)
   end
 
-  # Tell Phoenix to update the endpoint configuration
-  # whenever the application is updated.
   def config_change(changed, _new, removed) do
     InmanaWeb.Endpoint.config_change(changed, removed)
     :ok
